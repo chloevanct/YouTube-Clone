@@ -90,10 +90,17 @@ if the screen size is 600px or less */
     font-size: 12px;
     font-weight: 500;
     background-color: black;
+
     padding-left: 4px;
     padding-right: 4px;
     padding-top: 4px;
-    padding-bottom: 4px;
+    padding-bottom: 4px; 
+/* 
+    if you just use padding it sets all four sides*/
+    /* padding: 4px 10px 20px 30px; */
+    /* first value is vertical padding, second value is horizontal padding
+    if you have all four arguments then its top, right, bottom, left */
+    
     border-radius: 2px;
     color: white;
     position: absolute;
