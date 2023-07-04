@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grid Practice</title>
+    </head>
+    <body style="padding-bottom: 1000px"> 
+        <div style="
+            display: grid;
+            grid-template-columns: 100px 100px;
+            ">
+
+            <!-- this style is in line style which allows us to use css in html
+            usually don't do this, keep css in a seperate file -->
+            <div style="background-color: lightblue;">div 1</div>
+            <div style="background-color: lightpink;">div 2<p>text</p></div>
+
+            <!-- grid maintains alignment much beeter-->
+
+        </div>
+
+        <div style="
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: 100px 100px 200px;
+            ">
+
+            <!-- this style is in line style which allows us to use css in html
+            usually don't do this, keep css in a seperate file -->
+            <div style="background-color: lightblue;">100px</div>
+            <div style="background-color: lightpink;">100px<p>text</p></div>
+            <div style="background-color: lightblue;">200px</div>
+            <div style="background-color: lightpink;">100px<p>text</p></div>
+
+        </div>
+
+        <div style="
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            ">
+            <!-- fr means free spance -->
+
+            <!-- this style is in line style which allows us to use css in html
+            usually don't do this, keep css in a seperate file -->
+            <div style="background-color: lightblue;">100px</div>
+            <div style="background-color: lightpink;">100px</div>
+            
+        </div>
+
+        <div style="
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: 100px 1fr 2fr;
+            ">
+            <!-- fr means free space, the number in front tells what ratio if there
+            are multiple frs, it represents a ratio -->
+
+            <!-- this style is in line style which allows us to use css in html
+            usually don't do this, keep css in a seperate file -->
+            <div style="background-color: lightblue;">100px</div>
+            <div style="background-color: lightpink;">1fr</div>
+            <div style="background-color: lightblue;">1fr</div>
+            
+        </div>
+
+        <div style="
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 20px;
+            row-gap: 40px;
+            ">
+            <!-- fr means free space, the number in front tells what ratio if there
+            are multiple frs, it represents a ratio -->
+
+            <!-- this style is in line style which allows us to use css in html
+            usually don't do this, keep css in a seperate file -->
+            <div style="background-color: lightblue; height: 200px;">1fr</div>
+            <div style="background-color: lightpink; height: 200px;">1fr</div>
+            <div style="background-color: lightblue; height: 200px;">1fr</div>
+
+            <div style="background-color: lightpink; height: 200px;">1fr</div>
+            <div style="background-color: lightblue; height: 200px;">1fr</div>
+            <div style="background-color: lightpink; height: 200px;">1fr</div>
+            
+    </div>
+    </body>
+</html>
